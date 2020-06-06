@@ -16,6 +16,7 @@ def test_createNewUser(start_exec):
     json_input = file.read()
     json_read = json.loads(json_input)
     response = requests.post(url, json_read)
+    print(response.status_code)
     assert response.status_code == 201
 
 
