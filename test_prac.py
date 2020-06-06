@@ -15,4 +15,4 @@ def test_data():
         json_data = obj.update_jsonRequest(i, json_request, keyList)
         response = requests.post(url, json_data)
         print(response.text)
-        print(response.status_code)
+        print(response.content)
